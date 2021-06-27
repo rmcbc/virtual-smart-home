@@ -14,7 +14,7 @@ jobs:
         node-version: [14.x]
         region: [eu-west-1, us-east-1, us-west-2]
     env:
-      LOG_LEVEL: info # debug | info | notice | warning | error
+      LOG_LEVEL: debug #info # debug | info | notice | warning | error
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
